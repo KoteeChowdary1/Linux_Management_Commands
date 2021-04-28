@@ -1,0 +1,37 @@
+    1  systemctl -t help
+    2  systemctl list-unit-files
+    3  systemctl list-unit-files | grpep -i enable
+    4  systemctl list-unit-files | grep -i enable
+    5  systemctl list-unit-files | grep -i enable | grep sshd
+    6  systemctl list-unit-files | grep -i enable | grep httpd
+    7  systemctl list-unit-files | grep -i enable | grep vsftpd
+    8  clear
+    9* system
+   10  systemctl status vsftpd
+   11  systemctl start vsftpd
+   12  systemctl status vsftpd
+   13  systemctl stop vsftpd
+   14  systemctl status vsftpd
+   15  systemctl list-unit-files | grep -i enable | grep docker
+   16  systemctl enable vsftpd
+   17  systemctl status vsftpd
+   18  systemctl start vsftpd
+   19  systemctl status vsftpd
+   20  clear
+   21  ls
+   22  cd /usr/lib/systemd/system
+   23  ls
+   24  ll
+   25  ll | WC -L
+   26  ll | wc -l
+   27  cd ~
+   28  systemctl edit vsftpd.service
+   29  systemctl cat vsftpd.service
+   30  systemctl show vsftpd.service 
+   31  systemctl edit vsftpd.service 
+   32  systemctl daemon-reload 
+   33  systemctl status vsftpd
+   34  systemctl restart vsftpd
+   35  killall vsftpd
+   36  systemctl status vsftpd
+   37  history > system_managment.cpmm
